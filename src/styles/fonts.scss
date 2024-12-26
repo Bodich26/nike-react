@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../../public/fonts/FuturaLtCnBT.woff) format('woff');
+  src: url(../../public/fonts/FuturaLtCnBT.woff2) format('woff'),
+    url(../../public/fonts/FuturaLtCnBT.ttf) format('truetype'),
+    url(../../public/fonts/FuturaLtCnBT.eot) format('embedded-opentype'),
+    url(../../public/fonts/FuturaLtCnBT.svg) format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(../../public/fonts/FuturaLtBT.woff) format('woff');
+  src: url(../../public/fonts/FuturaLtBT.woff2) format('woff'),
+    url(../../public/fonts/FuturaLtBT.ttf) format('truetype'),
+    url(../../public/fonts/FuturaLtBT.eot) format('embedded-opentype'),
+    url(../../public/fonts/FuturaLtBT.svg) format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(../../public/fonts/FuturaBkBT.woff) format('woff');
+  src: url(../../public/fonts/FuturaBkBT.woff2) format('woff'),
+    url(../../public/fonts/FuturaBkBT.ttf) format('truetype'),
+    url(../../public/fonts/FuturaBkBT.eot) format('embedded-opentype'),
+    url(../../public/fonts/FuturaBkBT.svg) format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(../../public/fonts/FuturaHvBT.woff) format('woff');
+  src: url(../../public/fonts/FuturaHvBT.woff2) format('woff'),
+    url(../../public/fonts/FuturaHvBT.ttf) format('truetype'),
+    url(../../public/fonts/FuturaHvBT.eot) format('embedded-opentype'),
+    url(../../public/fonts/FuturaHvBT.svg) format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(../../public/fonts/FuturaMbBT.woff) format('woff');
+  src: url(../../public/fonts/FuturaMbBT.woff2) format('woff'),
+    url(../../public/fonts/FuturaMbBT.ttf) format('truetype'),
+    url(../../public/fonts/FuturaMbBT.eot) format('embedded-opentype'),
+    url(../../public/fonts/FuturaMbBT.svg) format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(../../public/fonts/FuturaXBikCnltBT.woff) format('woff');
+  src: url(../../public/fonts/FuturaXBikCnltBT.woff2) format('woff'),
+    url(../../public/fonts/FuturaXBikCnltBT.ttf) format('truetype'),
+    url(../../public/fonts/FuturaXBikCnltBT.eot) format('embedded-opentype'),
+    url(../../public/fonts/FuturaXBikCnltBT.svg) format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Futura', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #000;
+}

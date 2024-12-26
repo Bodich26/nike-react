@@ -1,0 +1,101 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.nikeclub {
+  padding: 250px 0;
+  overflow: hidden;
+  position: relative;
+  &__wrap {
+    border: 1px solid white;
+    padding: 64px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  &__block {
+    &-title {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 58px;
+      letter-spacing: 0em;
+    }
+    &-text {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: 0em;
+      margin: 16px 0 32px;
+      text-transform: capitalize;
+    }
+    &-btn {
+      @include btn-white();
+    }
+  }
+  &__logo {
+    width: 227px;
+    height: 90px;
+  }
+  &__shose {
+    position: absolute;
+    top: 47%;
+    right: -10%;
+    z-index: 1;
+    width: 677px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nikeclub {
+    padding: 60px 0;
+  }
+  .nikeclub__shose {
+    display: none;
+  }
+  .nikeclub__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+  }
+  .nikeclub__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nikeclub__block-text {
+    margin: 10px 0 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .nikeclub__block-title {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  .nikeclub__block-text {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 16px 0 0px;
+  }
+  .nikeclub__logo {
+    width: 30%;
+  }
+}
+@media (max-width: 320px) {
+  .nikeclub__wrap {
+    padding: 30px 20px;
+  }
+  .nikeclub__block-title {
+    font-size: 27px;
+    line-height: 37px;
+  }
+  .nikeclub__block-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

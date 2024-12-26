@@ -1,0 +1,197 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.favorites {
+  padding: 240px 0 160px;
+  &__title {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    margin-bottom: 80px;
+    span {
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 64px;
+      letter-spacing: 0em;
+      color: var(--red);
+
+      &:first-child {
+        position: relative;
+        &::after {
+          content: '';
+          left: 34px;
+          top: 77px;
+          position: absolute;
+          display: block;
+          width: 97px;
+          border-radius: 57%;
+          background-color: red;
+          height: 5px;
+          filter: blur(5px);
+          background-color: var(--white);
+        }
+      }
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 80px;
+  }
+  &__item {
+    position: relative;
+    &-glowball {
+      @include mini-glowball;
+    }
+    &-title {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: end;
+      letter-spacing: 0em;
+      margin-bottom: 16px;
+    }
+    &-box {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 29px;
+    }
+    &-price {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0em;
+      color: var(--red);
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .favorites__wrap {
+    justify-content: center;
+  }
+  .favorites__item-glowball {
+    box-shadow: 0 0 8px 90px rgba(186, 0, 0, 0.25),
+      0 0 8px 90px rgba(186, 0, 0, 0.25), 0 0 8px 90px rgba(186, 0, 0, 0.25),
+      0 0 8px 90px rgba(186, 0, 0, 0.25);
+  }
+  .favorites__item-box {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .favorites__item-box {
+    img {
+      width: 70%;
+    }
+  }
+  .favorites__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .favorites__item-glowball {
+    box-shadow: 0 0 8px 70px rgba(186, 0, 0, 0.25),
+      0 0 8px 70px rgba(186, 0, 0, 0.25), 0 0 8px 70px rgba(186, 0, 0, 0.25),
+      0 0 8px 70px rgba(186, 0, 0, 0.25);
+  }
+}
+@media (max-width: 768px) {
+  .favorites__item-box {
+    justify-content: center;
+  }
+  .favorites__title {
+    text-align: center;
+    font-size: 48px;
+    span {
+      font-size: 48px;
+    }
+  }
+  .favorites {
+    padding: 120px 0 90px;
+  }
+  .favorites__title span:first-child::after {
+    content: '';
+    left: 2px;
+    top: 61px;
+    position: absolute;
+    display: block;
+    width: 97px;
+    border-radius: 57%;
+    background-color: red;
+    height: 5px;
+    filter: blur(5px);
+    background-color: var(--white);
+  }
+  .favorites__wrap {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  .favorites__item-glowball {
+    right: 25%;
+  }
+}
+
+@media (max-width: 550px) {
+  .favorites__item-glowball {
+    display: none;
+  }
+  .favorites__title {
+    font-size: 34px;
+    line-height: 55px;
+    span {
+      font-size: 34px;
+      line-height: 55px;
+    }
+  }
+  .favorites__title span:first-child::after {
+    content: '';
+    left: 2px;
+    top: 47px;
+    position: absolute;
+    display: block;
+    width: 70px;
+    border-radius: 57%;
+    background-color: red;
+    height: 5px;
+    filter: blur(5px);
+    background-color: var(--white);
+  }
+  .favorites__title {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modern__shose::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: var(--red);
+    opacity: 1.7;
+    filter: blur(100px);
+  }
+}
+@media (max-width: 320px) {
+  .favorites__title {
+    font-size: 27px;
+    line-height: 35px;
+    span {
+      font-size: 27px;
+      line-height: 35px;
+    }
+  }
+  .favorites__title span:first-child::after {
+    content: '';
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin btn-white() {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 12px 24px;
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  transition: cubic-bezier(0.25, 0.32, 1, -0.02) 0.3s;
+  img {
+    transition: ease 0.3s;
+  }
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+    img {
+      transform: translate(8px, -3px);
+      filter: brightness(10%);
+    }
+  }
+}
+
+@mixin big-glowball() {
+  z-index: -1;
+  position: absolute;
+  transform: translateY(-64px);
+  box-shadow: 0 0 210px 230px rgba(186, 0, 0, 0.14),
+    0 0 210px 230px rgba(186, 0, 0, 0.14), 0 0 210px 230px rgba(186, 0, 0, 0.14),
+    0 0 210px 230px rgba(186, 0, 0, 0.14);
+  filter: blur(100px);
+}
+
+@mixin mini-glowball() {
+  z-index: -1;
+  position: absolute;
+  transform: translateX(-182px);
+  bottom: 73px;
+  right: 0;
+  box-shadow: 0 0 20px 103px rgba(186, 0, 0, 0.25),
+    0 0 20px 103px rgba(186, 0, 0, 0.25), 0 0 20px 103px rgba(186, 0, 0, 0.25),
+    0 0 20px 103px rgba(186, 0, 0, 0.25);
+  filter: blur(100px);
+}

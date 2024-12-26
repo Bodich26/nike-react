@@ -1,0 +1,215 @@
+.sneakers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 170px 0 121px;
+  &__model {
+    padding: 0 20px;
+  }
+  &__palette {
+    position: relative;
+    min-width: 155px;
+    min-height: 480px;
+    background: url('./../../img/linePalette.svg') center / cover no-repeat;
+    &-lightred {
+      background-color: #973030;
+      left: 26px;
+      top: -3px;
+    }
+    &-pink {
+      background-color: #9b0e95;
+      left: 86px;
+      top: 64px;
+    }
+    &-blue {
+      background-color: #002b7b;
+      left: 129px;
+      top: 142px;
+    }
+    &-black {
+      background-color: #000;
+      left: 146px;
+      top: 232px;
+    }
+    &-red {
+      background-color: #a8000a;
+      left: 131px;
+      top: 319px;
+    }
+    &-yellow {
+      background-color: #86942f;
+      left: 90px;
+      top: 399px;
+    }
+    &-green {
+      background-color: #3d996d;
+      left: 26px;
+      top: 472px;
+    }
+  }
+
+  &__title {
+    font-size: 38px;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 492px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-price {
+      font-size: 36px;
+      font-weight: 500;
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    margin-right: 66px;
+    margin-left: 15px;
+    &-icon {
+      transition: ease 0.3s;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(70%);
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+    &-number {
+      cursor: pointer;
+      outline: none;
+      font-size: 36px;
+      font-weight: 500;
+      option {
+        background-color: #141414;
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.sneakers__palette-lightred,
+.sneakers__palette-pink,
+.sneakers__palette-blue,
+.sneakers__palette-black,
+.sneakers__palette-red,
+.sneakers__palette-yellow,
+.sneakers__palette-green {
+  border: 1px solid var(--white);
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: cubic-bezier(0.54, 0.06, 0.27, 0.9) 0.3s;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid var(--white);
+    width: 18px;
+    height: 18px;
+  }
+  &.active-color {
+    border: 2px solid var(--white);
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sneakers__feature {
+    flex-basis: 25%;
+  }
+  .sneakers__title {
+    font-size: 28px;
+    letter-spacing: 0em;
+  }
+}
+@media (max-width: 992px) {
+  .sneakers__model {
+    width: 70%;
+  }
+  .sneakers {
+    flex-direction: column;
+    padding: 300px 0 121px;
+  }
+  .sneakers__palette {
+    rotate: -270deg;
+    position: absolute;
+    top: -42px;
+  }
+  .sneakers__block {
+    margin: 0;
+  }
+  .sneakers__wrap {
+    column-gap: 35px;
+  }
+  .sneakers__feature {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 640px) {
+  .sneakers__model {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .sneakers__palette {
+    background: none;
+    width: 0;
+    height: 0;
+    position: inherit;
+    min-height: 372px;
+    min-width: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sneakers {
+    padding: 0 0 120px;
+  }
+  .sneakers__palette-lightred,
+  .sneakers__palette-pink,
+  .sneakers__palette-blue,
+  .sneakers__palette-black,
+  .sneakers__palette-red,
+  .sneakers__palette-yellow,
+  .sneakers__palette-green {
+    position: inherit;
+  }
+  .sneakers__model {
+    transform: translateY(-90px);
+  }
+}
+@media (max-width: 450px) {
+  .sneakers__palette {
+    row-gap: 22px;
+    min-height: 280px;
+  }
+}
+@media (max-width: 375px) {
+  .sneakers__wrap {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .sneakers__model {
+    transform: translateY(-60px);
+  }
+}

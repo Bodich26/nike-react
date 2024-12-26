@@ -1,0 +1,34 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__post {
+    transform: translateY(22%);
+  }
+  &__desk {
+  }
+  &__title {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 550px) {
+  .products {
+    max-width: 65%;
+  }
+}
+@media (max-width: 425px) {
+  .products {
+    max-width: 65%;
+  }
+  .products__title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 320px) {
+  .products {
+    max-width: 72%;
+  }
+}

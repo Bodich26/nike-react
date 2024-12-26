@@ -1,0 +1,38 @@
+.poster {
+  position: relative;
+  &__title {
+    position: absolute;
+    font-size: 64px;
+    font-weight: 700;
+    right: -55px;
+    bottom: 22px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0); /* Прозрачный цвет текста */
+    -webkit-text-stroke-width: 1px; /* Ширина оводки */
+    -webkit-text-stroke-color: #fff; /* Цвет оводки */
+    transform: translate(-70px, 22px);
+  }
+  &__img {
+  }
+}
+
+@media (max-width: 992px) {
+  .poster {
+    width: 38%;
+  }
+}
+@media (max-width: 768px) {
+  .poster {
+    width: 38%;
+  }
+  .poster__title {
+    font-size: 47px;
+  }
+}
+@media (max-width: 550px) {
+  .poster {
+    width: 55%;
+  }
+}
+@media (max-width: 320px) {
+}

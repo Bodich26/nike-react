@@ -1,0 +1,6 @@
+@import '../../styles/mixins.scss';
+
+.button {
+  margin-top: 40px;
+  @include btn-white();
+}

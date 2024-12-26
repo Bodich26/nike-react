@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.brands {
+  padding: 200px 10px 120px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1400px) {
+  .brands__wrap {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .brands {
+    padding: 105px 10px 105px;
+  }
+}
+@media (max-width: 768px) {
+  .brands {
+    padding: 65px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .brands {
+    padding: 95px 10px 30px;
+  }
+}

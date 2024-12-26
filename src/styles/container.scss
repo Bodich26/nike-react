@@ -1,0 +1,5 @@
+@import '../styles/mixins.scss';
+
+.container {
+  @include min-max(320px, 1670px, 15px);
+}
